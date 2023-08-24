@@ -6,7 +6,6 @@ import os
 from openpyxl import load_workbook, Workbook
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key_here'
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(script_dir, 'devices.xlsx')
