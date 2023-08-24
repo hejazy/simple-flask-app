@@ -1,7 +1,7 @@
 from flask import render_template, request
+from app.helpers.devices import load_devices_from_excel
 from __main__ import app
 
-from app.helpers.devices import load_devices_from_excel
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
