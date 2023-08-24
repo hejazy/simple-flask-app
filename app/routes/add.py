@@ -1,5 +1,8 @@
+from app.classes.device import DeviceForm
 from flask import render_template, request, redirect, flash
 from __main__ import app
+
+from app.helpers.devices import save_device_to_excel
 
 @app.route('/add_device', methods=['GET', 'POST'])
 def add_device():
